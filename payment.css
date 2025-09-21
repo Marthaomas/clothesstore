@@ -1,0 +1,255 @@
+
+.payment-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    border: 2px solid black; /* Black border */
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background: white;
+    margin-top: 150px;
+    flex-direction: row;
+  }
+
+  /* Left section: payment methods */
+  .payment-methods {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column; /* vertical by default */
+    gap: 10px;
+  }
+
+  .payment-methods h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .payment-methods hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+
+  .payment-methods button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    flex: 1;
+  }
+
+
+.payment-methods button.active {
+    font-weight: bold;
+    color: black;
+    
+    border-radius: 5px;
+}
+
+.payment-forms {
+    width: 50%;
+  }
+.order-summary {
+    width: 30%;
+  }
+/* Mobile view: stack vertically */
+@media (max-width: 768px) {
+    .payment-container {
+      flex-direction: column; /* vertical stack */
+    }
+  
+    .payment-methods,
+    .payment-forms,
+    .order-summary {
+      width: 100%; /* full width */
+    }
+  }
+  
+.form-hidden { display: none; }
+.form-active { display: block; }
+
+  .card-payment h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .card-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-icons img {
+    width: 30px;
+    height: auto;
+  }
+  
+  .card-payment hr {
+    margin: 10px 0 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-number-wrapper {
+    position: relative;
+  }
+  
+  .card-number-wrapper input {
+    width: 100%;
+    padding: 10px 35px 10px 10px; /* leave space for icon */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .card-number-wrapper i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  .expiry-cvv {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .expiry-cvv .input-group {
+    flex: 1;
+  }
+  
+  .expiry-cvv .input-group:first-child { flex: 2; }  /* Expiry wider */
+  .expiry-cvv .input-group:last-child { flex: 1; }   /* CVV smaller */
+  
+  .expiry-cvv input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .card-payment input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #pay-now-btn {
+    width: 100%;
+    padding: 12px;
+    background: #e60073;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #pay-now-btn:hover {
+    background: lightpink;
+  }
+  
+
+  /* Right section: order summary */
+  .order-summary {
+    width: 30%;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+  }
+
+  .order-summary h4 {
+    margin-top: 0;
+  }
+
+  .order-summary hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+
+  .internet-banking {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .internet-banking h4 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .internet-banking p {
+    margin-bottom: 10px;
+  }
+  
+  .bank-select,
+  .internet-banking input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .pay-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff4081, #ff6f61);
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .pay-btn:hover {
+    background: linear-gradient(135deg, #e91e63, #f44336);
+  }
+  
+  .card-payment {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  #pay-now-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff4081, #ff6f61);
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #pay-now-btn:hover {
+    background: linear-gradient(135deg, #e91e63, #f44336);
+  }
+  

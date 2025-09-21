@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header id="siteHeader">
+        <div class="nav-left">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+        </div>
+      
+        <img src="./imges/Logo.PNG" alt="Bikini logo" class="logo">
+      
+        <div class="nav-right">
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      
+        
+        <nav id="navMenu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </header> 
+       
+      <div class="payment-container">
+
+        <!-- Left: Payment Methods -->
+        <div class="payment-methods">
+          <h3>Payment Methods</h3>
+          <hr>
+          <button class="active" id="pay-card-btn">Payment by Card</button>
+          <button id="pay-internet-btn">Internet Banking</button>
+          <hr>
+        </div>
+      
+        <!-- Middle: Payment Forms -->
+        <div class="payment-forms">
+          
+          <!-- Card Payment Form -->
+          <div class="card-payment form-active">
+            <h4>Pay with Card</h4>
+      
+            <!-- Card Icons -->
+            <div class="card-icons">
+              <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+              <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+            </div>
+            <hr>
+      
+            <!-- Card Number -->
+            <div class="input-group">
+              <label>Card Number</label>
+              <div class="card-number-wrapper">
+                <input type="text" placeholder="1234 5678 9012 3456">
+                <i class="fas fa-credit-card"></i>
+              </div>
+            </div>
+      
+            <!-- Expiry + CVV -->
+            <div class="expiry-cvv">
+              <div class="input-group">
+                <label>Expiry Date</label>
+                <input type="text" placeholder="MM/YY">
+              </div>
+              <div class="input-group">
+                <label>CVV</label>
+                <input type="text" placeholder="123">
+              </div>
+            </div>
+      
+            <!-- Email -->
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" placeholder="you@example.com">
+            </div>
+      
+            <!-- Pay Button -->
+            <button id="pay-now-btn">Pay Now</button>
+          </div>
+      
+          <!-- Internet Banking Form -->
+          <div class="internet-banking form-hidden">
+            <h4>🌍 Pay via Internet Banking</h4>
+            <p>Select your bank or wallet:</p>
+          
+            <select class="bank-select">
+              <!-- African Banks -->
+              <option value="uba">UBA (United Bank for Africa)</option>
+              <option value="gtbank">GTBank</option>
+              <option value="access">Access Bank</option>
+              <option value="zenith">Zenith Bank</option>
+              <option value="ecobank">Ecobank</option>
+          
+              <!-- International Banks -->
+              <option value="chase">Chase (USA)</option>
+              <option value="boa">Bank of America</option>
+              <option value="wellsfargo">Wells Fargo</option>
+              <option value="hsbc">HSBC</option>
+              <option value="barclays">Barclays</option>
+          
+              <!-- Wallets -->
+              <option value="paypal">PayPal</option>
+              <option value="skrill">Skrill</option>
+              <option value="wise">Wise (TransferWise)</option>
+            </select>
+          
+            <div class="input-group">
+              <label>Account / Email</label>
+              <input type="text" placeholder="Enter account number or email">
+            </div>
+          
+            <button id="internet-pay-btn" class="pay-btn">Pay Now</button>
+          </div>
+      
+        </div>
+      
+        <!-- Right: Order Summary -->
+       <div class="order-summary">
+        <h4>Order Information</h4>
+         <hr>
+         <div id="order-details">
+        <!-- We'll dynamically insert order items here -->
+        </div>
+        </div>
+  
+      
+      </div>
+      
+      
+      
+
+
+      <footer>
+        <div class="footer-content">
+          <h2 class="footer-logo">Hot Body</h2>
+      
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+          </div>
+      
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        <p>All rights reserved ©2025</p>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

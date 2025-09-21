@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header id="siteHeader">
+        <div class="nav-left">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+        </div>
+      
+        <img src="./imges/Logo.PNG" alt="Bikini logo" class="logo">
+      
+        <div class="nav-right">
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      
+        
+        <nav id="navMenu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </header>
+    
+
+      <section id="hero">
+        <img src="imges/pic19.jpg" alt="Hero Image" class="hero-img">
+        <div class="hero-text">
+            <h1>Contact Informations</h1>
+            <p>Discover our latest products!</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+        </section>
+     
+        <div class="contact-container">
+            <!-- Left Side -->
+            <div class="contact-info">
+              <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <p><span>Phone:</span> +234 812 345 6789</p>
+              </div>
+              <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <p><span>Email:</span> info@example.com</p>
+              </div>
+              <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><span>Location:</span> Lagos, Nigeria</p>
+              </div>
+            </div>
+        
+            <!-- Right Side -->
+            <div class="contact-form">
+              <h2>Send Message</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <form id="contactForm">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+     
+
+
+      <footer>
+        <div class="footer-content">
+          <h2 class="footer-logo">Hot Body</h2>
+      
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+          </div>
+      
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        <p>All rights reserved ©2025</p>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
